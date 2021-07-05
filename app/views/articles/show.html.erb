@@ -5,7 +5,7 @@ div class="container">
         <%= simple_format @article.body %>
         <span><%= @article.created_at.strftime("%Y年%m月%d日") %></span>
       </div>
-        <%= link_to '編集', edit_article_path(@article), class: 'btn btn_primary', style: 'margin-bottom: 10px; margin-right: 10px' %>
-        <%= link_to '削除する', article_path(@article), method: :delete, data: {confirm: '削除してもよろしですか？'},class: 'btn btn_danger', style: 'margin-bottom: 10px' %>
+        <%= link_to 'EDIT', edit_article_path(@article), class: 'btn btn_primary', style: 'margin-bottom: 10px; margin-right: 10px' %>
+        <%= link_to 'DELETE', article_path(@article), method: :delete, data: {confirm: '削除してもよろしですか？'},class: 'btn btn_danger', style: 'margin-bottom: 10px' %>
   </div>
 </div>
